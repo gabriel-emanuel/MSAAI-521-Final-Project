@@ -273,13 +273,13 @@ This project is licensed under the [MIT License](LICENSE).
 **Group 5 Members:**
 
 - **Gabriel Emanuel Colón**  
-  Email: gabriel.colon@usd.edu
+  Email: gabriel.colon@sandiego.edu
 
 - **Geoffrey Fadera**  
-  Email: geoffrey.fadera@usd.edu
+  Email: geoffrey.fadera@sandiego.edu
 
 - **Yunus Tezcan**  
-  Email: yunus.tezcan@usd.edu
+  Email: yunus.tezcan@sandiego.edu
 
 **University of San Diego, MSAAI**
 
@@ -288,7 +288,6 @@ This project is licensed under the [MIT License](LICENSE).
 - **HAM10000 Dataset:** [Tschandl et al., 2018](https://doi.org/10.1038/sdata.2018.161)
 - **YOLOv7 Model:** [Ultralytics](https://github.com/ultralytics/YOLOv7)
 - **Vision Transformer:** [Hugging Face Transformers](https://huggingface.co/google/vit-base-patch16-224)
-- **Gradio:** [Gradio Documentation](https://gradio.app/get_started)
 - **Research Inspirations:**
   - [Ćirković & Stanić, 2024](https://scidar.kg.ac.rs/handle/123456789/21167)
   - [Gloster & Brodland, 1996](https://doi.org/10.1111/j.1524-4725.1996.tb00312.x)
