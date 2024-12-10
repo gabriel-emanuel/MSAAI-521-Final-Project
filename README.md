@@ -22,7 +22,7 @@
 
 Skin cancer is one of the most prevalent and rapidly increasing forms of cancer worldwide. Early detection and accurate classification are critical for effective treatment and improved patient outcomes. Traditional diagnostic methods rely heavily on the expertise of dermatologists to interpret dermoscopic images, which can be time-consuming and subject to human error.
 
-Our project explores and compares various deep learning-based computer vision models for the classification and detection of skin cancer. Utilizing the HAM10000 dataset, we evaluate transformer-based Vision Transformers (ViT) and convolutional neural network (CNN) architectures, specifically DenseNet variants (DenseNet-121, DenseNet-169, and DenseNet-201). Additionally, we incorporate object detection using the YOLOv8 model to localize lesions within images.
+Our project explores and compares various deep learning-based computer vision models for the classification and detection of skin cancer. Utilizing the HAM10000 dataset, we evaluate transformer-based Vision Transformers (ViT) and convolutional neural network (CNN) architectures, specifically DenseNet variants (DenseNet-121, DenseNet-169, and DenseNet-201). Additionally, we incorporate object detection using the YOLOv7 model to localize lesions within images.
 
 The ultimate goal is to develop a practical mobile application that serves as a preliminary screening tool for the general public, encouraging timely medical consultations.
 
@@ -34,7 +34,7 @@ The ultimate goal is to develop a practical mobile application that serves as a 
   - Models trained with and without data augmentation
 
 - **Object Detection:**
-  - YOLOv8 for lesion localization
+  - YOLOv7 for lesion localization
 
 - **Data Handling:**
   - Comprehensive data preprocessing and augmentation to address class imbalance
@@ -111,7 +111,7 @@ The ultimate goal is to develop a practical mobile application that serves as a 
 - Data augmentation significantly improved accuracy and precision across all DenseNet models.
 - DenseNet-169 achieved the highest F1-score, balancing precision and recall effectively.
 
-### 3. Object Detection: YOLOv8
+### 3. Object Detection: YOLOv7
 
 - **Purpose:** Localize skin cancer lesions within images.
 - **Performance:** Accurate bounding boxes around lesions; effective for preliminary screening.
@@ -171,9 +171,9 @@ python Evaluate_Classifiers.py
 
 This script will evaluate all DenseNet and ViT models on the validation set, generating performance metrics and learning curves.
 
-### Object Detection with YOLOv8
+### Object Detection with YOLOv7
 
-Ensure that the YOLOv8 model is properly trained and the weights are available.
+Ensure that the YOLOv7 model is properly trained and the weights are available.
 
 ```python
 # Example usage in Python
@@ -215,7 +215,7 @@ Access the demo via the provided local URL or the public link if deployed online
 
 - ViT outperforms DenseNet variants in all classification metrics.
 - Data augmentation enhances precision and overall accuracy in DenseNet models.
-- YOLOv8 effectively localizes lesions, supporting preliminary screening efforts.
+- YOLOv7 effectively localizes lesions, supporting preliminary screening efforts.
 
 ## Future Work
 
@@ -228,7 +228,7 @@ Access the demo via the provided local URL or the public link if deployed online
   - Explore ensemble methods combining ViT and DenseNet strengths.
 
 - **Object Detection Refinement:**
-  - Improve YOLOv8's precision and reduce false positives.
+  - Improve YOLOv7's precision and reduce false positives.
   - Integrate real-time video feed for dynamic lesion detection.
 
 - **Clinical Validation:**
@@ -286,7 +286,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 - **HAM10000 Dataset:** [Tschandl et al., 2018](https://doi.org/10.1038/sdata.2018.161)
-- **YOLOv8 Model:** [Ultralytics](https://github.com/ultralytics/yolov8)
+- **YOLOv7 Model:** [Ultralytics](https://github.com/ultralytics/YOLOv7)
 - **Vision Transformer:** [Hugging Face Transformers](https://huggingface.co/google/vit-base-patch16-224)
 - **Gradio:** [Gradio Documentation](https://gradio.app/get_started)
 - **Research Inspirations:**
